@@ -254,26 +254,22 @@ const LandingPage = () => {
 
       <div className="info-container">
         <div className="info-section">
-          <h1 style={{ margin: 0 }} className="top-line">
-            You are not alone
-          </h1>
-          <h2 style={{ margin: "0" }} className="heading">
-            It is a battle for everyone.
-          </h2>
-          <p style={{ margin: "10px 0" }} className="subtitle">
-            Check out this Sentiment Analysis chart and Word Cloud that was
-            created by extracting Twitter tweets regarding mental health.
-          </p>
-
-          <div className="info-row imgStart">
+          <div className="info-row">
             <div className="col1">
-              <div className="text-wrap"></div>
-              <div className="img-wrapper">
-                <img style={{ marginTop: "-80px" }} src={WordCloud} alt="Img" />
+              <div className="text-wrap">
+                <h1 className="top-line">You are not alone</h1>
+                <h2 className="heading">It is a battle for everyone.</h2>
+                <p className="subtitle">
+                  Check out this Sentiment Analysis chart and Word Cloud that
+                  was created by extracting Twitter tweets regarding mental
+                  health.
+                </p>
               </div>
             </div>
+
             <div className="col2">
-              <div className="img-wrapper">
+              <div className="img-wrapper flex">
+                <img style={{ marginTop: "-80px" }} src={WordCloud} alt="Img" />
                 <img src={DailyAverage} alt="Img" />
               </div>
             </div>
