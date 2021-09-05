@@ -7,6 +7,10 @@ import {
 import Login from "./Login";
 import SignUp from "./SignUp";
 import Img1 from "../img/svg-1.svg";
+import Logo from "../img/logo.png";
+import WordCloud from "../img/wordCloud.png";
+import DailyAverage from "../img/dailyAverage.png";
+
 import Img2 from "../img/svg-2.svg";
 import Img3 from "../img/svg-3.svg";
 import Img4 from "../img/svg-4.svg";
@@ -78,6 +82,18 @@ const LandingPage = () => {
 
         <div className="page-content">
           <h1 className="page-heading">SemiColon Community</h1>
+          <center>
+            <p style={{ marginLeft: "5%", marginRight: "5%" }}>
+              Mental health is such an important aspect in life. In order to be
+              successful, people must have an optimistic mindset and never give
+              up at their goals. Unfortunately, about 800,000 people die from
+              being depressed each year. In order to have a healthy, calm mind,
+              it is important to receive support and engagement from others.
+              Hence, we hope this webapp shines some light in the lives of
+              others, and makes their duties easier with its broad range of
+              functionality.
+            </p>
+          </center>
           <button className="btn" onClick={getRandomQuote}>
             Random Quote !!
           </button>
@@ -113,6 +129,35 @@ const LandingPage = () => {
         </div>
       </div>
 
+      <div className="info-container dark">
+        <div className="info-section">
+          <div className="info-row">
+            <div className="col1">
+              <div className="img-wrapper">
+                <img className="logo-img" src={Logo} alt="Img" />
+              </div>
+            </div>
+            <div className="col2">
+              <div className="text-wrap">
+                <h1 className="top-line">About Us</h1>
+                <h2 className="heading">
+                  We are dedicated to helping you maintain a positive
+                  state-of-mind.{" "}
+                </h2>
+                <p className="subtitle">
+                  With our chat functionality, we will help users avoid stress
+                  by talking to others on the webapp. We also have a daily quote
+                  section for motivation and a mental health tips list. We
+                  believe that the semicolon is a symbol for optimism, as when a
+                  writer includes a semicolon, the sentence goes on when there
+                  is a pause, just like in life, hence the name.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="info-container">
         <div className="info-section">
           <div className="info-row">
@@ -140,7 +185,7 @@ const LandingPage = () => {
           <div className="info-row imgStart">
             <div className="col1">
               <div className="text-wrap">
-                <h1 className="top-line">Medidate.</h1>
+                <h1 className="top-line">Meditate.</h1>
                 <h2 className="heading">
                   Meditation, yoga, massages, and deep breathing exercises and
                   guidance.
@@ -207,13 +252,42 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div id="sign-in" className="info-container">
+      <div className="info-container">
+        <div className="info-section">
+          <h1 style={{ margin: 0 }} className="top-line">
+            You are not alone
+          </h1>
+          <h2 style={{ margin: "0" }} className="heading">
+            It is a battle for everyone.
+          </h2>
+          <p style={{ margin: "10px 0" }} className="subtitle">
+            Check out this Sentiment Analysis chart and Word Cloud that was
+            created by extracting Twitter tweets regarding mental health.
+          </p>
+
+          <div className="info-row imgStart">
+            <div className="col1">
+              <div className="text-wrap"></div>
+              <div className="img-wrapper">
+                <img style={{ marginTop: "-80px" }} src={WordCloud} alt="Img" />
+              </div>
+            </div>
+            <div className="col2">
+              <div className="img-wrapper">
+                <img src={DailyAverage} alt="Img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="sign-in" className="info-container dark">
         <div className="info-section">
           <div className="info-row">
             <div className="col1">
               <div className="text-wrap">
-                <h1 className="top-line">Engaging into sports.</h1>
-                <h2 className="heading">For you, me and all of us.</h2>
+                <h1 className="top-line">Join Us!</h1>
+                <h2 className="heading">Login to start your journey now!</h2>
                 <p className="subtitle">
                   Exercising with others is ideal in improving mental health
                   because you are with people close to you who can understand
@@ -231,7 +305,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div id="sign-up" className="info-container dark">
+      <div id="sign-up" className="info-container">
         <div className="info-section">
           <div className="info-row imgStart">
             <div className="col1">

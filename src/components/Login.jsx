@@ -56,7 +56,7 @@ const Login = () => {
             required
           />
           <div align="center">
-            <button type="submit" className="btn">
+            <button type="submit" className="btn button">
               <span style={{ fontSize: "1.5rem", fontWeight: "600" }}>
                 Login
               </span>
