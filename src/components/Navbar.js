@@ -13,6 +13,17 @@ const Navbar = ({ scrollNav, toggleHome }) => {
           Home
         </Link>
         <Link
+          to="hotline"
+          smooth={true}
+          duration={1000}
+          spy={true}
+          offset={-70}
+          exact="true"
+          className="navbar-btn"
+        >
+          Hotline
+        </Link>
+        <Link
           to="sign-in"
           smooth={true}
           duration={1000}

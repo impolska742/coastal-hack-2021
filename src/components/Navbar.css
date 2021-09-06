@@ -37,13 +37,9 @@ nav {
   color: #fff;
 }
 
-@media screen and (max-width: 600px) {
-  nav {
-    margin-top: -110px;
-  }
-
+@media screen and (max-width: 690px) {
   .links > .navbar-btn {
-    margin: 0 15px;
+    margin: 0 10px;
     font-size: 1rem;
   }
 
@@ -53,14 +49,14 @@ nav {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .links > .navbar-btn {
-    margin: 0 10px;
+    margin: 0 6.5px;
     font-size: 0.75rem;
   }
 
   .logo {
-    margin: 0 15px;
+    margin: 0 10px;
     font-size: 1rem;
   }
 }
